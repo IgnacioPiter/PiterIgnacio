@@ -10,15 +10,15 @@ function consultar() {
       })
       .then(data => {
         var municipioCensales = data["localidades-censales"];
-        var cantidadLocalidades = data.cantidad;
+        var cantidaddepartamento = data.cantidad;
   
         var matchFound = false;
-        var departamento = "";
+        var provincia = "";
         var municipio = "";
   
         municipioCensales.forEach(function(value) {
-          if (codigo === value.municipio.id){
-            departamento = value.provincia.nombre;
+           if (codigo === value.municipio.id){
+            Provincia = value.provincia.nombre;
             municipio = value.municipio.nombre;
             latitud = value.centroide.lat;
             longitud = value.centroide.lon;
@@ -33,7 +33,7 @@ function consultar() {
   
         if (matchFound) {
           infoElement.innerHTML = `
-            <p>Departamento: ${departamento}</p>
+            <p>provincia: ${provincia}</p>
             <p>Municipio: ${municipio}</p>
             <p>latitud: ${latitud}</p>
             <p>longitud: ${longitud}</p>
