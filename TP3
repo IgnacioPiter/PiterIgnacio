@@ -1,15 +1,2 @@
-EL GENDER ES EL UNICO DATO QUE HAY Q COMPARAR Y SI SON IGUALES DEMOSTRAR CON UN ICONO SI SON DEL MIMO SEXO O SINO NO (PONERLE ALGUN ICONO O ALGO Q INDIQUE SI SON MATCH O NO)
-la pantalla boton consultar y cuando yo apreto tengo q buscar una persona random en la api ramdonuse y api de rickmorty y hacer un id ramdon entre 1 y 826 
-de esos personajes van a mostrar del ramdom use de un lado y del otro lado los datos del rick and morty del trabajo entre estos dos tiene q haber un solo dato comun q es el gender y hay q compararlo cuando los generos son iguales tiene q tener un tilde entre medio de color verder y si no son iguales q me diga con un tilde q no son iguales
-
-
-//TP3 ES HACER hacer una pantalla que diga un solo boton consultar(RAMDOMUSER PARA HACER Y LEAFTLET PARA PONER EL MAPA)
-foto gender
-nombre
-apellido 
-fecha de nacimineto
-localidad
-cordenadas:latitud y lonngitud//
-
 
 
