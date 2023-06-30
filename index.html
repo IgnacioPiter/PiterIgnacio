@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Consulta de Datos Censales</title>
-  <script src="funciones.js"></script>
+  <title>Formulario de Jugadoras</title>
 </head>
 <body>
-  <h1>Consulta de Datos Censales</h1>
-  <label for="codigo">idmunicipio:</label>
-  <input type="text" id="codigo">
-  <label for="codigo">id provincia:</label>
-  <input tpye="text" id="codigo">
-  <button onclick="consultar()">Enviar</button>
-  <div id="info"></div>
+  <form action="insertjugadoras.php" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre">
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellido" id="apellido">
+
+    <label for="club">club:</label>
+    <input type="text" name="club" id="club">
+
+    <label for="Edad">edad:</label>
+    <input type="text" name="edad" id="edad">    
+
+    <input type="submit" value="Enviar">
+  </form>
 </body>
 </html>
