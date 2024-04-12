@@ -1,6 +1,6 @@
 
 
-const persoanje= {
+/*const persoanje= {
     "id": 140,
     "name": "Genital Washer",
     "status": "Alive",
@@ -24,10 +24,65 @@ const persoanje= {
 
         
 }
+*/
+
+function agregarpersonaje() {
+    var nconsulta = document.getElementById("agregarpersonaje").value
+    fetch(`https://rickandmortyapi.com/api/character/${nconsulta}`)
+    .then (function(response){
+        return response.json()
+    })
+    .then (function(data){
+        document.getElementById("info").innerHTML =`
+        <img src="${data.image}">
+        <p>${data.name}</p>
+        <p>${data.status}</p>
+        <p>${data.gender}</p>`
+    })
+}
+
+
+/*function buscarpersonaje(){
+    const codigoinput = document.getElementById("codigo").value;
+    const imge = document.createElement('img');
+    document.getElementById("img").appendChild(imagen);
+    fetch(`https://rickandmortyapi.com/api/character/${nconsulta}`)
+    .then(response => response.json())
+    .then(data =>{
+        
+        if (data.gender = "unknow"){
+            document.getElementById("image").innerHTML=(data.image)
+        }
+            else{
+                document.getElementById("image".innerHTML="no existe")
+      
+            }
+        console.log(data)
+    })
+}
+
+
+/*function buscarpersonaje(){
+    const codigoinput = document.getElementById("codigo").value;
+    document.getElementById("result").innerHTML=" ";
+    fetch("https://rickandmortyapi.com/api/character/" + codigoinput)
+    .then(response => response.json())
+    .then(data =>{
+        if (data.name != null){
+            document.getElementById("result").innerHTML=(  "El Personaje "  +  data.name  + " Esta "  +  data.status )
+        }
+            else{
+                document.getElementById("result".innerHTML="no existe")
+      
+            }
+        console.log(data)
+    })
+}
 document.getElementById("result").innerHTML="El personaje" + (persoanje.name +"esta" + persoanje.status);
 console.log("El persoanje "+ persoanje.name+  " esta " + persoanje.status);
 
-document.getElementById("result").innerHTML=""
+
+
 
 
 /*const jugador ={
@@ -41,5 +96,18 @@ document.getElementById("result").innerHTML=""
 
 }
 console.log(jugador.clubes[0]);
+
+if (data.name != null){
+            document.getElementById("result").innerHTML=(  "El Personaje "  +  data.name  + " Esta "  +  data.status )
+        }
+            else{
+                document.getElementById("result".innerHTML="no existe")
+      
+            }
+        console.log(data)
+    })
+}
+document.getElementById("result").innerHTML="El personaje" + (persoanje.name +"esta" + persoanje.status);
+console.log("El persoanje "+ persoanje.name+  " esta " + persoanje.status);
 */
 
