@@ -1,0 +1,10 @@
+#map { height: 180px; width: 500px; margin-top: 10px;}
+#nombre{
+    position: relative;
+    left: 80px;
+    top: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+    font-style: unset;
+    text-decoration: underline;
+}
